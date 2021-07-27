@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+	background-color: #f3f3f3;
+	min-height: 100vh;
+	height: 100%;
+	font-size: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app__login {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 20px;
+	background-color: white;
+	border: 1px solid lightgray;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.app__loginHome {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: white;
+}
+.app__loginHome a {
+	margin: 0px !important;
+}
+.app__upload {
+	bottom: 0;
+	background-color: white;
+	border: 1px solid lightgray;
+	text-align: center;
+	padding: 15px 10px;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1em;
 }
 
-.App-link {
-  color: #61dafb;
+.app__headerImage {
+	object-fit: contain;
+	max-height: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app__headerRight {
+	display: flex;
+	align-items: center;
+}
+
+.app__headerRight > p {
+	margin-right: 5px;
+}
+
+.app__headerAvatar {
+	height: 24px !important;
+	width: 24px !important;
+}
+
+.app__header {
+	height: 42px !important;
+	position: sticky;
+
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 1;
+	padding: 5px 5%;
+	background-color: #ffffff;
+	border-bottom: 1px solid lightgray;
+}
+
+.app__posts {
+	padding: 10px 0px;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.app__postsRight {
+	margin-left: 10px;
+}
+.control_btn {
+	color: white !important;
+	background-color: #32383f !important;
+	font-weight: 600 !important;
+	padding: 0.5em 20px !important;
+	margin: 0 20px !important;
+}
+.link_option {
+	text-decoration: none;
+	justify-content: center;
+	text-align: center;
+}
+.company_logo {
+	background-color: #32383f !important;
+	padding: 4px 8px;
+	border-radius: 30px;
+	color: white;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+	.user_chip {
+		display: none !important;
+	}
+	.app {
+		font-size: 8px;
+	}
 }
