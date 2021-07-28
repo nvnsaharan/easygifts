@@ -16,13 +16,7 @@ import { useHistory } from "react-router-dom";
 
 function EventsPage(props) {
   const history = useHistory();
-  const [participants, setParticipants] = useState([
-    { user: "Naveen", score: "3" },
-    { user: "Manoj", score: "3" },
-    { user: "Ayush", score: "2" },
-    { user: "Nishat", score: "2" },
-    { user: "Rao", score: "2" },
-  ]);
+
   const [start, setStart] = useState(false);
 
   useEffect(() => {
@@ -55,7 +49,7 @@ function EventsPage(props) {
 
         <div className="result_board">
           <h3>Score Board</h3>
-          {participants.map((participant, index) => (
+          {props.participants.map((participant, index) => (
             <p key={index} className="result_item">
               <span key={1}> {participant.user}</span>
               <span key={2}> {participant.score}</span>
@@ -66,7 +60,11 @@ function EventsPage(props) {
 
       <div className="quiz_div">
         {start ? (
-          <Quiz />
+          <Quiz
+            participants={props.participants}
+            setParticipants={props.setParticipants}
+            User={props.User}
+          />
         ) : (
           <>
             <h2>Rules for participants</h2>

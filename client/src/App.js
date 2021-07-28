@@ -17,6 +17,13 @@ function App() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [user, setUser] = useState(null);
+  const [participants, setParticipants] = useState([
+    { user: "Naveen", score: "3" },
+    { user: "Manoj", score: "2" },
+    { user: "Ayush", score: "2" },
+    { user: "Nishat", score: "1" },
+    { user: "Rao", score: "1" },
+  ]);
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((authUser) => {
@@ -62,7 +69,7 @@ function App() {
   function Navbar({ User }) {
     return (
       <div className="app__header">
-        <h1 className="company_logo">Trendd</h1>
+        <h1 className="company_logo">Giftasy</h1>
         {User && User.displayName ? (
           <div className="app__headerRight">
             <Button
@@ -144,11 +151,15 @@ function App() {
         </Route>
         <Route exact path="/events-quiz-night">
           <Navbar User={user} />
-          <EventsPage User={user} />
+          <EventsPage
+            participants={participants}
+            setParticipants={setParticipants}
+            User={user}
+          />
         </Route>
         <Route exact path="/dashboard">
           <Navbar User={user} />
-          <Dashboard User={user} />
+          <Dashboard participants={participants} />
         </Route>
       </HashRouter>
     </div>

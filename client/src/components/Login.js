@@ -31,7 +31,7 @@ function Login(props) {
       <div className="form_div">
         <form className="app__login">
           <div className="form_header">
-            <h1>Trendd</h1>
+            <h1>Giftasy</h1>
             <h3>Modern way to discuss</h3>
           </div>
           <TextField

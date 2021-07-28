@@ -1,0 +1,15 @@
+.dashboard_div {
+  width: 700px;
+  margin: 2% auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+.dashboard_div p {
+  display: flex;
+  justify-content: space-evenly;
+}
+.span_elem {
+  width: 150px;
+  text-align: center;
+}
