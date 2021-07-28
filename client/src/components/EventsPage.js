@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./EventsPage.css";
 import Quiz from "./QuizMain";
 import {
@@ -12,8 +12,10 @@ import {
 import "./AllEvents.css";
 import quiz1 from "../static/posters/quizposter1.jpg";
 import rules from "./constant";
+import { useHistory } from "react-router-dom";
 
-function EventsPage() {
+function EventsPage(props) {
+  const history = useHistory();
   const [participants, setParticipants] = useState([
     { user: "Naveen", score: "3" },
     { user: "Manoj", score: "3" },
@@ -22,6 +24,12 @@ function EventsPage() {
     { user: "Rao", score: "2" },
   ]);
   const [start, setStart] = useState(false);
+
+  useEffect(() => {
+    if (props.User == null) {
+      history.push("/login");
+    }
+  }, []);
   return (
     <div className="EventsPage">
       <div className="score_event_div">
@@ -47,10 +55,10 @@ function EventsPage() {
 
         <div className="result_board">
           <h3>Score Board</h3>
-          {participants.map((participant) => (
-            <p className="result_item">
-              <span> {participant.user}</span>
-              <span> {participant.score}</span>
+          {participants.map((participant, index) => (
+            <p key={index} className="result_item">
+              <span key={1}> {participant.user}</span>
+              <span key={2}> {participant.score}</span>
             </p>
           ))}
         </div>
@@ -63,8 +71,8 @@ function EventsPage() {
           <>
             <h2>Rules for participants</h2>
             <ol className="rulesList">
-              {rules.map((rule) => (
-                <li>{rule.text}</li>
+              {rules.map((rule, index) => (
+                <li key={index}>{rule.text}</li>
               ))}
             </ol>
             <Button

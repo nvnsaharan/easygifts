@@ -9,6 +9,7 @@ import Signup from "./components/Signup";
 import MainPage from "./components/MainPage";
 import AllEvent from "./components/AllEvent";
 import EventsPage from "./components/EventsPage";
+import Dashboard from "./components/Dashboard";
 
 function App() {
   const generator = new AvatarGenerator();
@@ -53,6 +54,9 @@ function App() {
     auth
       .createUserWithEmailAndPassword(email, password)
       .catch((error) => alert(error.message));
+    setTimeout(function () {
+      window.location.reload();
+    }, 2000);
   };
 
   function Navbar({ User }) {
@@ -136,11 +140,15 @@ function App() {
         </Route>
         <Route exact path="/events">
           <Navbar User={user} />
-          <AllEvent />
+          <AllEvent User={user} />
         </Route>
         <Route exact path="/events-quiz-night">
           <Navbar User={user} />
-          <EventsPage />
+          <EventsPage User={user} />
+        </Route>
+        <Route exact path="/dashboard">
+          <Navbar User={user} />
+          <Dashboard User={user} />
         </Route>
       </HashRouter>
     </div>

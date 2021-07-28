@@ -19,7 +19,7 @@
   width: 100%;
   background-color: white;
   padding: 10px 20px;
-  height: 500px;
+  min-height: 500px;
 }
 .rulesList {
   margin: 20px;
