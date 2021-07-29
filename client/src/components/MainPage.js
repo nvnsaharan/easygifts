@@ -7,10 +7,12 @@ import { Link } from "react-router-dom";
 function MainPage() {
   return (
     <div className="main_page">
-      <div key={0} className="main_card card_div">
-        <img src={giftlogo} alt=""></img>
-        <h1>Gift Cards</h1>
-      </div>
+      <Link className="link_option" to="gifts">
+        <div key={0} className="main_card card_div">
+          <img src={giftlogo} alt=""></img>
+          <h1>Gift Cards</h1>
+        </div>
+      </Link>
       <Link className="link_option" to="events">
         <div key={1} className="main_card event_div">
           <img src={eventlogo} alt=""></img>
