@@ -9,6 +9,7 @@ import {
 import React, { useEffect, useState } from "react";
 import cardscontant from "./cardscontant";
 import "./GiftCard.css";
+import axios from "axios";
 import { useHistory } from "react-router-dom";
 
 export default function GiftCard(props) {
@@ -23,6 +24,21 @@ export default function GiftCard(props) {
   const history = useHistory();
 
   useEffect(() => {
+    axios
+      .post(
+        "https://api.blinksky.com/api/v1/catalog",
+        JSON.stringify({
+          service: {
+            apikey: "4ea9adaee37d4364a7be45d8241c8863",
+          },
+        }),
+        {
+          apikey: "4ea9adaee37d4364a7be45d8241c8863",
+          "content-type": "application/json",
+        }
+      )
+      .then((response) => console.log(response));
+
     if (props.User == null) {
       history.push("/login");
     }
