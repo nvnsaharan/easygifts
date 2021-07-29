@@ -1,8 +1,14 @@
 import { Button } from "@material-ui/core";
 import React from "react";
 import "./Dashboard.css";
+import { useHistory } from "react-router-dom";
 
 function Dashboard({ participants }) {
+  const history = useHistory();
+
+  const handleClick = () => {
+    history.push("/gifts");
+  };
   return (
     <div className="dashboard_div">
       <h1>Score Board</h1>
@@ -14,7 +20,11 @@ function Dashboard({ participants }) {
           <span className="span_elem" key={2}>
             {participant.score}
           </span>
-          <Button className="span_elem" size="small">
+          <Button
+            onClick={(e) => handleClick()}
+            className="span_elem"
+            size="small"
+          >
             Send
           </Button>
         </p>

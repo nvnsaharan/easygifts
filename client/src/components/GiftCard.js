@@ -1,19 +1,159 @@
-import React, { useEffect } from "react";
-import Card from "@material-ui/core/Card";
-import CardMedia from "@material-ui/core/CardMedia";
-import CardActions from "@material-ui/core/CardActions";
-import quiz1 from "../static/posters/quizposter1.jpg";
-import axios from "../util/axios";
+import {
+  Button,
+  Card,
+  CardActionArea,
+  CardMedia,
+  Modal,
+  TextField,
+} from "@material-ui/core";
+import React, { useEffect, useState } from "react";
+import cardscontant from "./cardscontant";
+import "./GiftCard.css";
+import { useHistory } from "react-router-dom";
 
-export default function GiftCard() {
+export default function GiftCard(props) {
+  const [open, setOpen] = useState(false);
+  const [amount, setamount] = React.useState("");
+  const [name, setName] = useState("");
+  const [number, setNumber] = useState("");
+  const [message, setMessage] = useState("");
+  const [datetime, setDatetime] = useState(false);
+  const history = useHistory();
+
   useEffect(() => {
-    axios
-      .post("/catalog", {
-        service: {
-          apikey: "4ea9adaee37d4364a7be45d8241c8863",
-        },
-      })
-      .then((response) => console.log(response));
+    if (props.User == null) {
+      history.push("/login");
+    }
+    if (props.participants[0].user !== "Naveen") {
+      setName(props.participants[0].user);
+      setNumber(props.participants[0].email);
+    }
   }, []);
-  return <div></div>;
+
+  const handleOpen = (e) => {
+    setamount(e.target.innerText);
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+  const body = (
+    <div className="modal_body">
+      <h2 id="simple-modal-title">Make someones day :)</h2>
+      <div className="modal_form">
+        <TextField
+          key={0}
+          id="outlined-helperText"
+          label="Receiver's Name"
+          variant="outlined"
+          value={name}
+          onChange={(e) => setName(e)}
+        />
+        <TextField
+          key={1}
+          id="outlined-helperText"
+          label="Mobile no./Email"
+          variant="outlined"
+          value={number}
+          onChange={(e) => setNumber(e)}
+        />
+        <TextField
+          key={2}
+          id="outlined-helperText"
+          label="Amount"
+          variant="outlined"
+          value={amount}
+        />
+        <TextField
+          key={3}
+          id="outlined-helperText"
+          label="Message"
+          variant="outlined"
+          value={message}
+          onChange={(e) => {
+            setMessage(e);
+          }}
+        />
+        {datetime ? (
+          <form noValidate>
+            <TextField
+              key={4}
+              id="datetime-local"
+              label="Date/Time"
+              type="datetime-local"
+              variant="outlined"
+              defaultValue=""
+              InputLabelProps={{
+                shrink: true,
+              }}
+            />
+          </form>
+        ) : (
+          ""
+        )}
+
+        <Button
+          onClick={(e) => handleClose()}
+          variant="contained"
+          size="medium"
+          color="primary"
+          key={5}
+        >
+          Send
+        </Button>
+        <Button
+          onClick={(e) => (datetime ? setDatetime(false) : setDatetime(true))}
+          className="schedule_btn"
+          variant="contained"
+          size="medium"
+          key={6}
+        >
+          Schedule
+        </Button>
+      </div>
+    </div>
+  );
+  return (
+    <div className="main_div">
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="simple-modal-title"
+        aria-describedby="simple-modal-description"
+      >
+        {body}
+      </Modal>
+      {cardscontant.map((cards, index) => (
+        <div key={index}>
+          <h1>{cards.caption}</h1>
+          <div className="cards_div">
+            <Card className="card">
+              <CardActionArea>
+                <CardMedia
+                  className="card_media"
+                  image={cards.logo}
+                  title="quizposter"
+                />
+              </CardActionArea>
+            </Card>
+            <div className="button_collections">
+              {cards.value.split(",").map((val, index) => (
+                <Button
+                  key={index}
+                  onClick={(e) => handleOpen(e)}
+                  className="buttons"
+                  variant="outlined"
+                  size="medium"
+                  color="secondary"
+                >
+                  {`$ ${val}`}
+                </Button>
+              ))}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
 }

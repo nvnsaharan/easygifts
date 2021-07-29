@@ -25,7 +25,6 @@ import TextField from "@material-ui/core/TextField";
 
 function AllEvent() {
   const [open, setOpen] = useState(false);
-
   const [type, setType] = React.useState("");
 
   const handleChange = (event) => {

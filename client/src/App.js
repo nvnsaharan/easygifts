@@ -70,7 +70,9 @@ function App() {
   function Navbar({ User }) {
     return (
       <div className="app__header">
-        <h1 className="company_logo">Giftasy</h1>
+        <Link to="/">
+          <h1 className="company_logo">Giftasy</h1>
+        </Link>
         {User && User.displayName ? (
           <div className="app__headerRight">
             <Button
@@ -121,10 +123,6 @@ function App() {
           <Navbar User={user} />
           <MainPage />
         </Route>
-        <Route exact path="/gifts">
-          <Navbar User={user} />
-          <GiftCard />
-        </Route>
 
         <Route exact path="/login">
           <Login
@@ -153,6 +151,10 @@ function App() {
         <Route exact path="/events">
           <Navbar User={user} />
           <AllEvent User={user} />
+        </Route>
+        <Route exact path="/gifts">
+          <Navbar User={user} />
+          <GiftCard User={user} participants={participants} />
         </Route>
         <Route exact path="/events-quiz-night">
           <Navbar User={user} />

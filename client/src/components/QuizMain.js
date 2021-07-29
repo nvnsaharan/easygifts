@@ -3,8 +3,10 @@ import Question from "./question/Question";
 import Answer from "./answer/Answer";
 import "./QuizMain.css";
 import { Button } from "@material-ui/core";
+import { useHistory } from "react-router-dom";
 
 function Quiz(props) {
+  const history = useHistory();
   const [quiestions, setquiestions] = useState({
     1: "Which of them is Oldest Programming Language?",
     2: 'What is the name of the continent on which most of the action of "Game of Thrones" takes place?',
@@ -78,6 +80,7 @@ function Quiz(props) {
       },
       ...props.participants,
     ]);
+    history.push("/events");
   };
   // method to move to the next question
   const nextStep = (step) => {
