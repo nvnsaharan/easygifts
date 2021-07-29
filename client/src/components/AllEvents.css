@@ -15,7 +15,8 @@
   height: 7px;
 }
 .card {
-  width: 300px;
+  width: 300px !important;
+  margin: 0 !important;
 }
 .card_media {
   height: 150px;

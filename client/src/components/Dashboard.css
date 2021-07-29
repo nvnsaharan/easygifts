@@ -13,3 +13,7 @@
   width: 150px;
   text-align: center;
 }
+.span_button {
+  color: orangered !important;
+  font-weight: bold !important;
+}

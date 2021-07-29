@@ -32,3 +32,22 @@ h1 {
 .schedule_btn {
   margin-top: 10px !important;
 }
+.loading_screen {
+  margin: 0 auto;
+  background-image: url(../static/gene.gif);
+  height: 200px;
+  width: 300px;
+  background-position: center;
+  background-size: cover;
+}
+.success_screen {
+  margin: 0 auto;
+  background-image: url(../static/success.gif);
+  height: 306px;
+  width: 400px;
+  background-position: center;
+  background-size: cover;
+}
+.modal_body {
+  min-height: 306px !important;
+}

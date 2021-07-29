@@ -18,6 +18,8 @@ export default function GiftCard(props) {
   const [number, setNumber] = useState("");
   const [message, setMessage] = useState("");
   const [datetime, setDatetime] = useState(false);
+  const [confirmPage, setConfirmPage] = useState(false);
+  const [success, setSuccess] = useState(false);
   const history = useHistory();
 
   useEffect(() => {
@@ -30,14 +32,48 @@ export default function GiftCard(props) {
     }
   }, []);
 
+  const handleSuccess = () => {
+    setSuccess(true);
+    setTimeout(function () {
+      handleClose();
+      setConfirmPage(false);
+      setSuccess(false);
+    }, 3000);
+  };
   const handleOpen = (e) => {
     setamount(e.target.innerText);
     setOpen(true);
+    setConfirmPage(false);
+    setSuccess(false);
   };
 
   const handleClose = () => {
     setOpen(false);
   };
+  const successPage = (
+    <div className="modal_body">
+      <div className="modal_form">
+        <div className="success_screen"></div>
+      </div>
+    </div>
+  );
+
+  const confirm = (
+    <div className="modal_body">
+      <div className="modal_form">
+        <div className="loading_screen"></div>
+        <Button
+          onClick={(e) => handleSuccess()}
+          variant="contained"
+          size="medium"
+          color="secondary"
+          key={5}
+        >
+          please confirm your transaction
+        </Button>
+      </div>
+    </div>
+  );
   const body = (
     <div className="modal_body">
       <h2 id="simple-modal-title">Make someones day :)</h2>
@@ -94,7 +130,7 @@ export default function GiftCard(props) {
         )}
 
         <Button
-          onClick={(e) => handleClose()}
+          onClick={(e) => setConfirmPage(true)}
           variant="contained"
           size="medium"
           color="primary"
@@ -109,7 +145,7 @@ export default function GiftCard(props) {
           size="medium"
           key={6}
         >
-          Schedule
+          Schedule for later
         </Button>
       </div>
     </div>
@@ -122,7 +158,7 @@ export default function GiftCard(props) {
         aria-labelledby="simple-modal-title"
         aria-describedby="simple-modal-description"
       >
-        {body}
+        {confirmPage ? (success ? successPage : confirm) : body}
       </Modal>
       {cardscontant.map((cards, index) => (
         <div key={index}>

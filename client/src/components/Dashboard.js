@@ -22,10 +22,10 @@ function Dashboard({ participants }) {
           </span>
           <Button
             onClick={(e) => handleClick()}
-            className="span_elem"
+            className="span_elem span_button"
             size="small"
           >
-            Send
+            Send Gift
           </Button>
         </p>
       ))}
