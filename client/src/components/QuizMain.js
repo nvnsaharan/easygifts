@@ -41,7 +41,7 @@ function Quiz(props) {
       1: "I dont know",
       2: "7:30pm",
       3: "I lost my watch",
-      4: "Groot",
+      4: "I am Groot",
     },
   });
   const [correctAnswers, setcorrectAnswers] = useState({
