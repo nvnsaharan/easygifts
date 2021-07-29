@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-// import Card from "@material-ui/core/Card";
-// import CardMedia from "@material-ui/core/CardMedia";
-// import CardActions from "@material-ui/core/CardActions";
-// import quiz1 from "../static/posters/quizposter1.jpg";
+import Card from "@material-ui/core/Card";
+import CardMedia from "@material-ui/core/CardMedia";
+import CardActions from "@material-ui/core/CardActions";
+import quiz1 from "../static/posters/quizposter1.jpg";
 import axios from "../util/axios";
 
 export default function GiftCard() {
