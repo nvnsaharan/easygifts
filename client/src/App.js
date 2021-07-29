@@ -10,6 +10,7 @@ import MainPage from "./components/MainPage";
 import AllEvent from "./components/AllEvent";
 import EventsPage from "./components/EventsPage";
 import Dashboard from "./components/Dashboard";
+import GiftCard from "./components/GiftCard";
 
 function App() {
   const generator = new AvatarGenerator();
@@ -119,6 +120,10 @@ function App() {
         <Route exact path="/">
           <Navbar User={user} />
           <MainPage />
+        </Route>
+        <Route exact path="/gifts">
+          <Navbar User={user} />
+          <GiftCard />
         </Route>
 
         <Route exact path="/login">
