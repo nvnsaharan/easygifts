@@ -6,31 +6,50 @@ import { Button } from "@material-ui/core";
 
 function Quiz(props) {
   const [quiestions, setquiestions] = useState({
-    1: 'What US city is known as the "birthplace of jazz"?',
-    2: "What is the capital of Greece?",
-    3: "What planet gave birth to Superman?",
+    1: "Which of them is Oldest Programming Language?",
+    2: 'What is the name of the continent on which most of the action of "Game of Thrones" takes place?',
+    3: "which of these is not a programming language?",
+    4: "why did Thanos want to kill half of the humanity?",
+    5: '"Whats the time?" How would Groot answer this question?',
   });
   const [answers, setanswers] = useState({
     1: {
-      1: "Chicago",
-      2: "New Orleans",
-      3: "New York",
+      1: "Lisp",
+      2: "Fortran",
+      3: "COBOL",
+      4: "BASIC",
     },
     2: {
-      1: "Athens",
-      2: "Patras",
-      3: "Kalamata",
+      1: "Northeros",
+      2: "Easteros",
+      3: "Westeros",
+      4: "Southeros",
     },
     3: {
-      1: "Krypton",
-      2: "Mars",
-      3: "Saturn",
+      1: "Python",
+      2: "squirtle",
+      3: "Java",
+      4: "Swift",
+    },
+    4: {
+      1: "He wanted to impress Mistress Death",
+      2: "He wanted to plant vegetables on whole planet",
+      3: "He wanted to protect humanity from salvation and overpopulation",
+      4: "He wanted to win the hackthone",
+    },
+    5: {
+      1: "I dont know",
+      2: "7:30pm",
+      3: "I lost my watch",
+      4: "Groot",
     },
   });
   const [correctAnswers, setcorrectAnswers] = useState({
     1: "2",
-    2: "1",
-    3: "1",
+    2: "3",
+    3: "2",
+    4: "3",
+    5: "4",
   });
   const [correctAnswer, setcorrectAnswer] = useState(0);
   const [clickedAnswer, setclickedAnswer] = useState(0);
@@ -54,7 +73,7 @@ function Quiz(props) {
     props.setParticipants([
       {
         user: props.User.displayName,
-        score: 5,
+        score: score,
         email: props.User.email,
       },
       ...props.participants,
