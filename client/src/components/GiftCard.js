@@ -199,7 +199,9 @@ export default function GiftCard(props) {
       </Modal>
       {cardscontant.map((cards, index) => (
         <div key={index}>
-          <h1>{cards.caption}</h1>
+          <div className="event_heading">
+            <h1 className="event_type">{cards.caption}</h1>
+          </div>
           <div className="cards_div">
             <Card className="card">
               <CardActionArea>
