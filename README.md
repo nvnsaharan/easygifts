@@ -6,13 +6,13 @@
 <space><space>
 ![ForTheBadge built-by-developers](https://img.shields.io/badge/-Manoj%20Saharan-green)
 <space><space>
-![ForTheBadge built-by-developers](https://img.shields.io/badge/-Nishat-pink)
+![ForTheBadge built-by-developers](https://img.shields.io/badge/-Nishat-ff69b4)
 <space><space>
 ![ForTheBadge built-by-developers](https://img.shields.io/badge/-Ayush-yellow)
 <space><space>
 ![ForTheBadge built-by-developers](https://img.shields.io/badge/-RT%20Rao-blue)
 <space><space>
-![ForTheBadge built-by-developers](https://img.shields.io/badge/-Swanand%20Apte-ff69b4)
+![ForTheBadge built-by-developers](https://img.shields.io/badge/-Swanand%20Apte-pink)
 <space><space>
 
 ## Made with :heart:
