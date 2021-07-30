@@ -33,7 +33,7 @@
   flex-wrap: wrap;
 }
 .upcoming_event_heading .card {
-  margin: 3.5px 10px;
+  margin: 3.5px 10px !important;
 }
 .card_body_info {
   display: block;
