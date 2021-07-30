@@ -1,7 +1,9 @@
-[![forthebadge made-with-Reactjs](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://reactjs.org/)
+[![forthebadge made-with-Reactjs](http://ForTheBadge.com/images/badges/made-with-reactjs.svg)](https://reactjs.org/)
 
 [![git](https://img.shields.io/badge/--F05032?logo=git&logoColor=ffffff)](http://git-scm.com/)
 
 [![ForTheBadge built-by-developers](http://ForTheBadge.com/images/badges/built-by-developers.svg)](https://GitHub.com/Naereen/)
 
 [![ForTheBadge makes-people-smile](http://ForTheBadge.com/images/badges/makes-people-smile.svg)](http://ForTheBadge.com)
+
+[![forthebadge](https://forthebadge.com/images/badges/designed-in-figma.svg)](https://forthebadge.com)
