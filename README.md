@@ -2,7 +2,7 @@
 
 ## Team members
 
-[![ForTheBadge built-by-developers](https://img.shields.io/badge/-Naveen%20Saharan-orange?style=for-the-badge)](https://docs.google.com/document/d/1mxzldS1Fh3AQ3O_7QL1RyEy5Ur9oUGo3kxlfTYg_F5Y/edit)
+[![ForTheBadge built-by-developers](https://img.shields.io/badge/-Naveen%20Saharan-orange?style=for-the-badge)](https://github.com/nvnsaharan)
 <space><space>
 ![ForTheBadge built-by-developers](https://img.shields.io/badge/-Manoj%20Saharan-green?style=for-the-badge)
 <space><space>
@@ -41,5 +41,3 @@
 ## Video link
 
 ![ForTheBadge built-by-developers](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
-
-[![forthebadge](https://forthebadge.com/images/badges/powered-by-electricity.svg)](https://forthebadge.com)
