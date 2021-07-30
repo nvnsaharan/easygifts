@@ -24,20 +24,20 @@ export default function GiftCard(props) {
   const history = useHistory();
 
   useEffect(() => {
-    axios
-      .post(
-        "https://api.blinksky.com/api/v1/catalog",
-        JSON.stringify({
-          service: {
-            apikey: "4ea9adaee37d4364a7be45d8241c8863",
-          },
-        }),
-        {
-          apikey: "4ea9adaee37d4364a7be45d8241c8863",
-          "content-type": "application/json",
-        }
-      )
-      .then((response) => console.log(response));
+    // axios
+    //   .post(
+    //     "https://api.blinksky.com/api/v1/catalog",
+    //     JSON.stringify({
+    //       service: {
+    //         apikey: "4ea9adaee37d4364a7be45d8241c8863",
+    //       },
+    //     }),
+    //     {
+    //       apikey: "4ea9adaee37d4364a7be45d8241c8863",
+    //       "content-type": "application/json",
+    //     }
+    //   )
+    //   .then((response) => console.log(response));
 
     if (props.User == null) {
       history.push("/login");
