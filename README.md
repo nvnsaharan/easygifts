@@ -1,6 +1,4 @@
-# Giftasy
-
-## gifts made easy
+# Giftasy ## gifts made easy
 
 ## Team members
 
