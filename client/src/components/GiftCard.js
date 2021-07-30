@@ -108,7 +108,7 @@ export default function GiftCard(props) {
           label="Receiver's Name"
           variant="outlined"
           value={name}
-          onChange={(e) => setName(e)}
+          onChange={(e) => setName(e.target.value)}
         />
         <TextField
           key={1}
@@ -116,7 +116,7 @@ export default function GiftCard(props) {
           label="Mobile no./Email"
           variant="outlined"
           value={number}
-          onChange={(e) => setNumber(e)}
+          onChange={(e) => setNumber(e.target.value)}
         />
         <TextField
           key={2}
@@ -132,7 +132,7 @@ export default function GiftCard(props) {
           variant="outlined"
           value={message}
           onChange={(e) => {
-            setMessage(e);
+            setMessage(e.target.value);
           }}
         />
         {datetime ? (
