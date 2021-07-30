@@ -2,7 +2,7 @@
 
 ## Team members
 
-![ForTheBadge built-by-developers](https://img.shields.io/badge/-Naveen%20Saharan-orange)
+![ForTheBadge built-by-developers](https://img.shields.io/badge/-Naveen%20Saharan-orange)(https://github.com/Ayushgup85/EasyGifts)
 <space><space>
 ![ForTheBadge built-by-developers](https://img.shields.io/badge/-Manoj%20Saharan-green)
 <space><space>
