@@ -86,7 +86,12 @@ function AllEvent() {
             }}
           />
         </form>
-        <Button variant="contained" size="large" color="primary">
+        <Button
+          onClick={(e) => handleClose()}
+          variant="contained"
+          size="large"
+          color="primary"
+        >
           HOST
         </Button>
       </div>
