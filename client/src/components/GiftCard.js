@@ -178,7 +178,7 @@ export default function GiftCard(props) {
   return (
     <div className="main_div">
     <div className="button-top">
-    <ButtonGroup color="primary" aria-label="outlined primary button group">
+    <ButtonGroup variant ="contained" size="small" aria-label="contained primary button group">
   <Button >Anniversary Gift Cards</Button>
   <Button>Clothing Gift Cards </Button>
   <Button>Children Gift Cards</Button>
