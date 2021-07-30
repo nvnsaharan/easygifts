@@ -37,14 +37,14 @@
 ![ForTheBadge built-by-developers](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 <space><space>
 ![ForTheBadge built-by-developers](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+
 ## Inspiration
 
 Recieving gifts and prizes is a very memorable moment for everyone. Personalizing this gifting experience and the entire engagement among all users involved is what have drawn us to develop this platform.
 
 ## What it does
 
-
-Giftasy is a platform that can be used by influencers and event organisers for  gifting digital gift cards as prizes at events.
+Giftasy is a platform that can be used by influencers and event organisers for gifting digital gift cards as prizes at events.
 
 Sometimes social media influencers and event organizers face problems while conducting quiz events, surveys, and contests both online and offline, like organizing participants, conducting quiz, scoring, engaging with participants and distribution of prizes,.
 
@@ -63,34 +63,27 @@ The usage of digital gift cards as way to distribute prizes is also set to incre
 We have built this platform using React and Firebase. Designed UI / UX in Figma.
 We have listed down the requirements and distributed the work amongst ourselves. We followed scrum methodology approach and had scrum calls everyday. We choose the tech stack that can help us deliver the best and go-live soon.
 
-
 ## Challenges we ran into Giftasy
 
-We felt that studying the entire value chain of the gift card system, dissecting and identifying where value can be added, studying the events management and influencers platforms, brainstorming ideas, managing time and prioritising tasks are challenging. 
-
-
+We felt that studying the entire value chain of the gift card system, dissecting and identifying where value can be added, studying the events management and influencers platforms, brainstorming ideas, managing time and prioritising tasks are challenging.
 
 ## Accomplishments that we're proud of
 
-
 We have completed the prototype showcasing the entire process of conducting events and distributing gift cards.
-
 
 ## What we learned
 
 We have learned how to dissect the value chain and add value at intermediary stages, identify gaps in the market, manage time, and how to deliver personalized gifting experience for users.
 
-
 ## What's next for Giftasy
 
-
-
 We would like to go-live with the Minimum Viable Product (MVP) and on-board users onto the platform, making users adapt to the platform, close feedback loops, and incrementally add value to the system, help influencers with user analytics and make informed decisions.
-  
+
 ## Live link
 
 [![ForTheBadge built-by-developers](https://img.shields.io/badge/-Live%20Demo-white?style=for-the-badge)](https://easygifts.netlify.app)
 
 ## Video link
 
-![ForTheBadge built-by-developers](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
+[![ForTheBadge built-by-developers](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)]
+((https://youtu.be/3VUzLS7mlx4))
