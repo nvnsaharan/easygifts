@@ -1,14 +1,16 @@
-![ForTheBadge makes-people-smile](http://ForTheBadge.com/images/badges/makes-people-smile.svg)
+# Giftasy
+
+## gifts made easy
 
 ## Team members
 
 [![ForTheBadge built-by-developers](https://img.shields.io/badge/-Naveen%20Saharan-orange?style=for-the-badge)](https://github.com/nvnsaharan)
 <space><space>
-![ForTheBadge built-by-developers](https://img.shields.io/badge/-Manoj%20Saharan-green?style=for-the-badge)
+[![ForTheBadge built-by-developers](https://img.shields.io/badge/-Nishat-ff69b4?style=for-the-badge)](https://github.com/NishatAMS)
 <space><space>
-![ForTheBadge built-by-developers](https://img.shields.io/badge/-Nishat-ff69b4?style=for-the-badge)
+[![ForTheBadge built-by-developers](https://img.shields.io/badge/-Ayush-yellow?style=for-the-badge)](https://github.com/Ayushgup85)
 <space><space>
-![ForTheBadge built-by-developers](https://img.shields.io/badge/-Ayush-yellow?style=for-the-badge)
+[![ForTheBadge built-by-developers](https://img.shields.io/badge/-Manoj%20Saharan-green?style=for-the-badge)](https://github.com/manojxk)
 <space><space>
 ![ForTheBadge built-by-developers](https://img.shields.io/badge/-RT%20Rao-blue?style=for-the-badge)
 <space><space>
@@ -37,6 +39,10 @@
 ![ForTheBadge built-by-developers](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 <space><space>
 ![ForTheBadge built-by-developers](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+
+## Live link
+
+[![ForTheBadge built-by-developers](https://img.shields.io/badge/-Live%20Demo-white?style=for-the-badge)](https://easygifts.netlify.app)
 
 ## Video link
 
