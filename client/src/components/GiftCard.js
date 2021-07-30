@@ -3,9 +3,11 @@ import {
   Card,
   CardActionArea,
   CardMedia,
+  ButtonGroup,
   Modal,
   TextField,
 } from "@material-ui/core";
+import { makeStyles } from '@material-ui/core/styles';
 import React, { useEffect, useState } from "react";
 import cardscontant from "./cardscontant";
 import "./GiftCard.css";
@@ -168,6 +170,15 @@ export default function GiftCard(props) {
   );
   return (
     <div className="main_div">
+    <div className="button-top">
+    <ButtonGroup color="primary" aria-label="outlined primary button group">
+  <Button >Anniversary Gift Cards</Button>
+  <Button>Clothing Gift Cards </Button>
+  <Button>Children Gift Cards</Button>
+  <Button>Holiday Gift Cards</Button>
+</ButtonGroup>
+    </div>
+               
       <Modal
         open={open}
         onClose={handleClose}
