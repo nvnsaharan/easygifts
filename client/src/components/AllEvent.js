@@ -156,9 +156,11 @@ function AllEvent() {
             </CardActionArea>
           </Link>
           <CardActions>
-            <Button variant="contained" size="small" color="primary">
-              Start Now
-            </Button>
+            <Link className="card_link" to="events-quiz-night">
+              <Button variant="contained" size="small" color="primary">
+                Start Now
+              </Button>
+            </Link>
             <Link className="card_link" to="dashboard">
               <Button size="small" color="primary">
                 Share
