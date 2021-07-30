@@ -2,17 +2,17 @@
 
 ## Team members
 
-![ForTheBadge built-by-developers](https://img.shields.io/badge/-Naveen%20Saharan-orange?style=for-the-badge&logo=appveyor)
+![ForTheBadge built-by-developers](https://img.shields.io/badge/-Naveen%20Saharan-orange?style=for-the-badge)
 <space><space>
-![ForTheBadge built-by-developers](https://img.shields.io/badge/-Manoj%20Saharan-green)
+![ForTheBadge built-by-developers](https://img.shields.io/badge/-Manoj%20Saharan-green?style=for-the-badge)
 <space><space>
-![ForTheBadge built-by-developers](https://img.shields.io/badge/-Nishat-ff69b4)
+![ForTheBadge built-by-developers](https://img.shields.io/badge/-Nishat-ff69b4?style=for-the-badge)
 <space><space>
-![ForTheBadge built-by-developers](https://img.shields.io/badge/-Ayush-yellow)
+![ForTheBadge built-by-developers](https://img.shields.io/badge/-Ayush-yellow?style=for-the-badge)
 <space><space>
-![ForTheBadge built-by-developers](https://img.shields.io/badge/-RT%20Rao-blue)
+![ForTheBadge built-by-developers](https://img.shields.io/badge/-RT%20Rao-blue?style=for-the-badge)
 <space><space>
-![ForTheBadge built-by-developers](https://img.shields.io/badge/-Swanand%20Apte-pink)
+![ForTheBadge built-by-developers](https://img.shields.io/badge/-Swanand%20Apte-pink?style=for-the-badge)
 <space><space>
 
 ## Made with :heart:
