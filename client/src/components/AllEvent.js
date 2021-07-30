@@ -163,7 +163,7 @@ function AllEvent() {
             </Link>
             <Link className="card_link" to="dashboard">
               <Button size="small" color="primary">
-                Share
+                Score
               </Button>
             </Link>
           </CardActions>
