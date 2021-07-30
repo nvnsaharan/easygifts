@@ -11,7 +11,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import React, { useEffect, useState } from "react";
 import cardscontant from "./cardscontant";
 import "./GiftCard.css";
-import axios from "axios";
 import { useHistory } from "react-router-dom";
 
 export default function GiftCard(props) {
@@ -26,20 +25,28 @@ export default function GiftCard(props) {
   const history = useHistory();
 
   useEffect(() => {
-    // axios
-    //   .post(
-    //     "https://api.blinksky.com/api/v1/catalog",
-    //     JSON.stringify({
-    //       service: {
-    //         apikey: "4ea9adaee37d4364a7be45d8241c8863",
-    //       },
-    //     }),
-    //     {
-    //       apikey: "4ea9adaee37d4364a7be45d8241c8863",
-    //       "content-type": "application/json",
-    //     }
-    //   )
-    //   .then((response) => console.log(response));
+    var myHeaders = new Headers();
+    myHeaders.append("apikey", "4ea9adaee37d4364a7be45d8241c8863");
+    myHeaders.append("Content-Type", "application/json");
+    myHeaders.append(
+      "Cookie",
+      "ARRAffinity=fad2a19bfb1f1b8d4242c88edc8821fdcc9787225220d21ca1ea357be889903d; ARRAffinitySameSite=fad2a19bfb1f1b8d4242c88edc8821fdcc9787225220d21ca1ea357be889903d; ASP.NET_SessionId=kolinwt0pgntmv2ct05s150g"
+    );
+    var raw = JSON.stringify({
+      service: {
+        apikey: "4ea9adaee37d4364a7be45d8241c8863",
+      },
+    });
+    var requestOptions = {
+      method: "POST",
+      headers: myHeaders,
+      body: raw,
+      redirect: "follow",
+    };
+    fetch("https://api.blinksky.com/api/v1/catalog", requestOptions)
+      .then((response) => response.text())
+      .then((result) => console.log(result))
+      .catch((error) => console.log("error", error));
 
     if (props.User == null) {
       history.push("/login");
